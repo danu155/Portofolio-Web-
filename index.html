@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukas Danu Saptaji - Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Lukas Danu Saptaji</a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#cv">CV</a></li>
+            </ul>
+            <button id="lang-toggle" onclick="toggleLang()">🌐 EN</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-wrapper">
+            <div>
+                <img src="images/danu.jpeg" alt="Lukas Danu Saptaji" class="hero-image">
+            </div>
+            <div class="hero-content">
+                <h1>Lukas Danu Saptaji</h1>
+                <p style="font-size: 1.05rem; color: #999; margin: 0.5rem 0 1rem 0;">a.k.a <strong style="color: #7ab3d4;">Lukas</strong></p>
+                <p class="hero-subtitle"><span id="typed-text"></span><span class="cursor-blink">|</span></p>
+                <p data-id="hero_desc" style="font-size: 1rem; color: #c7d4e0; line-height: 1.8; margin: 2rem 0; max-width: 600px;">
+                    Saya adalah seorang individu yang aktif dan berolahraga secara teratur. Dengan rasa ingin tahu yang tinggi, saya senang mengeksplorasi cara kerja berbagai hal dan terus belajar tentang hal-hal baru. Konsistensi adalah prinsip yang saya junjung tinggi dalam setiap langkah perjalanan saya.
+                </p>
+                <a href="#portfolio" data-id="cta_btn" class="cta-button">Lihat Portofolio Saya</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- CONTENT WRAPPER WITH BACKGROUND -->
+    <div class="content-wrapper">
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+        <h2 data-id="about_title" class="section-title">Tentang Saya</h2>
+        
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <!-- Content Cards -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+                <!-- Hobi Card -->
+                <div style="background: linear-gradient(135deg, #1a1a1a 0%, #0f1419 100%); padding: 2.5rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(15, 52, 96, 0.3); border: 2px solid #0f3460; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(15, 52, 96, 0.2) 0%, transparent 70%); border-radius: 50%; z-index: 0;"></div>
+                    <h4 data-id="hobi_title" style="font-size: 1.3rem; color: #fff; margin-bottom: 1.5rem; font-weight: 600; position: relative; z-index: 1;">Hobi & Minat</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; position: relative; z-index: 1;">
+                        <span data-id="hobi1" style="background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); color: #fff; padding: 0.6rem 1.1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">Basket</span>
+                        <span data-id="hobi2" style="background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); color: #fff; padding: 0.6rem 1.1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">Bermain Gitar</span>
+                        <span data-id="hobi3" style="background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); color: #fff; padding: 0.6rem 1.1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">GYM</span>
+                        <span data-id="hobi4" style="background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); color: #fff; padding: 0.6rem 1.1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">Berenang</span>
+                        
+                    </div>
+                </div>
+
+                <!-- Skills Card -->
+                <div style="background: linear-gradient(135deg, #1a1a1a 0%, #0f1419 100%); padding: 2.5rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(15, 52, 96, 0.3); border: 2px solid #0f3460; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(15, 52, 96, 0.2) 0%, transparent 70%); border-radius: 50%; z-index: 0;"></div>
+                    <h4 data-id="skill_title" style="font-size: 1.3rem; color: #fff; margin-bottom: 1.5rem; font-weight: 600; position: relative; z-index: 1;">Keahlian Teknis</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; position: relative; z-index: 1;">
+                        <span style="background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); color: #fff; padding: 0.6rem 1.1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">Pemrograman</span>
+                        <span style="background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); color: #fff; padding: 0.6rem 1.1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">HTML & CSS</span>
+                        <span style="background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); color: #fff; padding: 0.6rem 1.1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">JavaScript</span>
+                        <span style="background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); color: #fff; padding: 0.6rem 1.1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">Network</span>
+                        <span style="background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); color: #fff; padding: 0.6rem 1.1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">Cyber Security</span>
+                        <span style="background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); color: #fff; padding: 0.6rem 1.1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion About Section -->
+            <div style="position: relative; max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <!-- Riwayat Keluarga -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h4 data-id="acc1_title">Riwayat Keluarga</h4>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p data-id="acc1_content">Saya merupakan anak pertama dari dua bersaudara. Sebagai anak sulung, saya tumbuh dengan rasa tanggung jawab yang besar, baik terhadap diri sendiri maupun terhadap adik saya. Keluarga adalah motivasi utama saya dalam menjalani setiap langkah kehidupan.</p>
+                    </div>
+                </div>
+
+                <!-- Riwayat Pendidikan -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h4 data-id="acc2_title">Riwayat Pendidikan</h4>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p data-id="acc2_content">Saat ini saya menempuh pendidikan di SMKN 7 Semarang, mengambil jurusan Sistem Informasi Jaringan dan Aplikasi (SIJA). Di jurusan ini, saya mempelajari berbagai ilmu di bidang teknologi informasi, mulai dari jaringan komputer hingga pengembangan aplikasi, yang menjadi bekal penting bagi karier saya di dunia digital.</p>
+                    </div>
+                </div>
+
+                <!-- Cita-cita & Tujuan Karier -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h4 data-id="acc3_title">Cita-cita &amp; Tujuan Karier</h4>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p data-id="acc3_content">Saya memiliki cita-cita untuk berkarier di bidang cyber security. Dunia keamanan siber bagi saya bukan sekadar profesi, melainkan sebuah panggilan untuk turut menjaga keamanan ruang digital. Di balik cita-cita tersebut, terdapat tujuan yang lebih dalam, yaitu membangun kehidupan yang mapan sehingga saya tidak lagi dibebani oleh permasalahan ekonomi. Semua usaha yang saya lakukan hari ini adalah investasi untuk masa depan yang lebih tenang dan sejahtera.</p>
+                    </div>
+                </div>
+
+                <!-- Kelebihan Diri -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h4 data-id="acc4_title">Kelebihan Diri</h4>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p data-id="acc4_content">Dari sisi soft skill, saya adalah pribadi yang konsisten dan disiplin. Kedua nilai ini saya pegang erat karena saya percaya bahwa kesuksesan bukan datang dari bakat semata, melainkan dari kebiasaan yang dibangun setiap hari. Adapun dari sisi hard skill, saya memiliki kemampuan di bidang pemrograman, khususnya HTML, CSS, dan Java. Saya juga memiliki pemahaman dasar dalam bahasa Python dan mulai mendalami dunia cyber security, terutama di area pwn (binary exploitation), yang menjadi bidang yang paling saya minati untuk terus dikembangkan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div style="text-align: center; position: relative; z-index: 1; margin-top: 4rem;">
+                <h4 data-id="contact_title" style="font-size: 1.2rem; color: #fff; margin-bottom: 2rem; font-weight: 600;">Terhubung Denganku</h4>
+                <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+                    <a href="https://instagram.com/lukasdanusaptaji" target="_blank" style="display: inline-flex; align-items: center; gap: 0.8rem; color: #fff; text-decoration: none; font-weight: 500; padding: 1rem 1.5rem; background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); border-radius: 30px; transition: all 0.3s; box-shadow: 0 10px 30px rgba(15, 52, 96, 0.4); border: 2px solid transparent;">
+                        <i class="fab fa-instagram" style="font-size: 1.2rem;"></i> Instagram
+                    </a>
+                    <a href="https://github.com/danu155" target="_blank" style="display: inline-flex; align-items: center; gap: 0.8rem; color: #fff; text-decoration: none; font-weight: 500; padding: 1rem 1.5rem; background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); border-radius: 30px; transition: all 0.3s; box-shadow: 0 10px 30px rgba(15, 52, 96, 0.4); border: 2px solid transparent;">
+                        <i class="fab fa-github" style="font-size: 1.2rem;"></i> GitHub
+                    </a>
+                    <div style="display: inline-flex; align-items: center; gap: 0.8rem; color: #fff; font-weight: 500; padding: 1rem 1.5rem; background: linear-gradient(135deg, #0f3460 0%, #1a5f8e 100%); border-radius: 30px; box-shadow: 0 10px 30px rgba(15, 52, 96, 0.4); border: 2px solid transparent; cursor: pointer;" onclick="copyEmail(this)">
+                        <i class="fas fa-envelope" style="font-size: 1.2rem;"></i> lukasdanu4@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2 data-id="skills_title" class="section-title">Skills & Teknologi</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code skill-icon"></i>
+                <h3>Programming</h3>
+                <p data-id="skill_card1_desc">Menulis kode yang bersih dan efisien</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Python</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-shield-halved skill-icon"></i>
+                <h3>Cyber Security</h3>
+                <p data-id="skill_card2_desc">Mengamankan sistem dan menganalisis celah keamanan</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">PWN</span>
+                    <span class="skill-tag">CTF</span>
+                    <span class="skill-tag">Binary Exploitation</span>
+                    <span class="skill-tag">Linux</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-network-wired skill-icon"></i>
+                <h3>Networking</h3>
+                <p data-id="skill_card3_desc">Memahami infrastruktur jaringan komputer</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">TCP/IP</span>
+                    <span class="skill-tag">Routing</span>
+                    <span class="skill-tag">Firewall</span>
+                    <span class="skill-tag">VLAN</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
+        <h2 data-id="portfolio_title" class="section-title">Portofolio Terpilih</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="RFID Attendance">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>RFID Student Attendance System</h3>
+                        <p data-id="porto1_desc">Sistem presensi siswa berbasis RFID Card dengan admin dashboard lengkap. Aplikasi web admin untuk manajemen data presensi, laporan, dan monitoring real-time kehadiran siswa di SMK NEGERI 7 SEMARANG</p>
+                        <div class="portfolio-links">
+                            <a href="https://web-admin-gilt.vercel.app/" class="portfolio-link" target="_blank">Live Demo</a>
+                            <a href="https://canva.link/6jrxi39n38l9jf8" class="portfolio-link" target="_blank">Presentasi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="CTF ARA ITS">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>CTF ARA ITS 2026</h3>
+                        <p data-id="porto2_desc">Partisipasi dalam Capture The Flag competition dari ARA ITS. Mengerjakan berbagai challenges di bidang cybersecurity, cryptography, dan hacking untuk menemukan flag tersembunyi</p>
+                        <div class="portfolio-links">
+                            <a href="portofolio/maundi_compressed.pdf" class="portfolio-link" target="_blank">Write-up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Write-up Wu">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>STEMBACTF WRITE UP - RET2WIN</h3>
+                        <p data-id="porto2b_desc">Dokumentasi write-up CTF dalam format PDF yang berisi langkah pengerjaan, analisis challenge, dan penyelesaian flag.</p>
+                        <div class="portfolio-links">
+                            <a href="portofolio/WU.pdf" class="portfolio-link" target="_blank">Buka</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Write-up Wu Copy">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>STEMBACTF WRITE UP - YAPPING</h3>
+                        <p data-id="porto2c_desc">Dokumentasi write-up CTF dalam format PDF yang berisi langkah pengerjaan, analisis challenge, dan penyelesaian flag.</p>
+                        <div class="portfolio-links">
+                            <a href="portofolio/Wu%20-%20Copy.pdf" class="portfolio-link" target="_blank">Buka</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Write-up WUUUU">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>STEMBACTF WRITE UP - RET2CTF</h3>
+                        <p data-id="porto2d_desc">Dokumentasi write-up CTF dalam format PDF yang berisi langkah pengerjaan, analisis challenge, dan penyelesaian flag.</p>
+                        <div class="portfolio-links">
+                            <a href="portofolio/WUUUU.pdf" class="portfolio-link" target="_blank">Buka</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="portofolio/dandim.jpeg" alt="Kejuaraan Basket">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>Kejuaraan Basket Dandim Cup</h3>
+                        <p data-id="porto3_desc">Pencapaian dalam kompetisi kejuaraan basket. Dokumentasi penuh dari berbagai pertandingan dan juara yang diraih menunjukkan dedikasi dan kerja sama tim dalam olahraga basket</p>
+                        <div class="portfolio-links">
+                            <a href="portofolio/dandim.jpeg" class="portfolio-link" target="_blank">Lihat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="portofolio/friendship.jpeg" alt="Kejuaraan Basket - Foto 2">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>Kejuaraan Basket Friendship</h3>
+                        <p data-id="porto3b_desc">Pencapaian dalam kompetisi kejuaraan basket. Dokumentasi penuh dari berbagai pertandingan dan juara yang diraih menunjukkan dedikasi dan kerja sama tim dalam olahraga basket</p>
+                        <div class="portfolio-links">
+                            <a href="portofolio/friendship.jpeg" class="portfolio-link" target="_blank">Lihat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="portofolio/rookies.jpeg" alt="Kejuaraan Basket - Foto 3">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>Kejuaraan Basket Rookies 3X3</h3>
+                        <p data-id="porto3c_desc">Pencapaian dalam kompetisi kejuaraan basket. Dokumentasi penuh dari berbagai pertandingan dan juara yang diraih menunjukkan dedikasi dan kerja sama tim dalam olahraga basket</p>
+                        <div class="portfolio-links">
+                            <a href="portofolio/rookies.jpeg" class="portfolio-link" target="_blank">Lihat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="portofolio/semesta.jpeg" alt="Kejuaraan Basket - Foto 4">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>Kejuaraan Basket SBC</h3>
+                        <p data-id="porto3d_desc">Pencapaian dalam kompetisi kejuaraan basket. Dokumentasi penuh dari berbagai pertandingan dan juara yang diraih menunjukkan dedikasi dan kerja sama tim dalam olahraga basket</p>
+                        <div class="portfolio-links">
+                            <a href="portofolio/semesta.jpeg" class="portfolio-link" target="_blank">Lihat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="portofolio/semesta2.jpeg" alt="Kejuaraan Basket - Foto 5">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>Kejuaraan Basket Semesta Cup</h3>
+                        <p data-id="porto3e_desc">Pencapaian dalam kompetisi kejuaraan basket. Dokumentasi penuh dari berbagai pertandingan dan juara yang diraih menunjukkan dedikasi dan kerja sama tim dalam olahraga basket</p>
+                        <div class="portfolio-links">
+                            <a href="portofolio/semesta2.jpeg" class="portfolio-link" target="_blank">Lihat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="OSPF Configuration">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>OSPF Configuration & Setup</h3>
+                        <p data-id="porto4_desc">Laporan implementasi dan konfigurasi OSPF (Open Shortest Path First) untuk dynamic routing. Menjelaskan setup, pengujian, dan hasil konfigurasi protocol routing OSPF di jaringan komputer</p>
+                        <div class="portfolio-links">
+                            <a href="portofolio/LAPORAN_OSPF.pdf" class="portfolio-link" target="_blank">Laporan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="RIP Configuration">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>RIP Dynamic Routing Configuration</h3>
+                        <p data-id="porto5_desc">Laporan lengkap konfigurasi dynamic routing menggunakan protocol RIP (Routing Information Protocol). Dokumentasi proses setup, testing, dan analisis performa routing RIP di jaringan</p>
+                        <div class="portfolio-links">
+                            <a href="portofolio/LAPRAK_KONFIGURASI_DYNAMIC_ROUTING_RIP.pdf" class="portfolio-link" target="_blank">Laporan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wireless ISP & Static Routing">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>Wireless ISP & Static Routing Configuration</h3>
+                        <p data-id="porto6_desc">Laporan implementasi konfigurasi Wireless ISP dan Static Routing. Mencakup setup infrastruktur wireless ISP, routing static, dan dokumentasi lengkap prosedur konfigurasi jaringan</p>
+                        <div class="portfolio-links">
+                            <a href="portofolio/Konfigurasi_Konfigurasi_Wireless_ISP_Routing_Static_Lukas%20Danu%20Saptaji_24_XI_SIJA_2.pdf" class="portfolio-link" target="_blank">Laporan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="section">
+        <h2 data-id="cv_title" class="section-title">CV & Pengalaman</h2>
+        <div class="cv-container">
+            <div class="cv-download">
+                <i class="fas fa-file-pdf"></i>
+                <h3 data-id="cv_download_title">Download CV</h3>
+                <p data-id="cv_download_desc">Lihat pengalaman dan kualifikasi lengkap saya</p>
+                <a href="CV/CV_Lukas_Danu_Saptaji.pdf" download style="color: #0f3460; font-weight: 600; text-decoration: none; margin-top: 1rem; display: inline-block;">Download PDF</a>
+            </div>
+            <div class="cv-experience">
+                <h3 data-id="cv_exp_title">Pengalaman & Pendidikan</h3>
+                <div class="experience-item">
+                    <div class="exp-title">SMK N 7 Semarang - SIJA</div>
+                    <div data-id="cv_exp1_company" class="exp-company">2024 - Sekarang</div>
+                    <p data-id="cv_exp1_desc">Menempuh pendidikan di jurusan SIJA (Sistem Infomasi, Jaringan dan Aplikasi)</p>
+                </div>
+                <div class="experience-item">
+                    <div class="exp-title">CTF ARA ITS 2026</div>
+                    <div data-id="cv_exp2_company" class="exp-company">2026</div>
+                    <p data-id="cv_exp2_desc">Berpartisipasi dalam kompetisi Capture The Flag dari ARA ITS, mengerjakan challenges di bidang cybersecurity, cryptography, dan binary exploitation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div><!-- END CONTENT WRAPPER -->
+
+    <script src="script.js"></script>
+    <script src="lang.js"></script>
+</body>
+</html>
+                
